@@ -1,0 +1,4 @@
+bcdedit /deletevalue {current} safeboot
+del "%programfiles(x86)%\Trusteer\Rapport\bin\x64\"*.sys
+del "%programfiles%\Trusteer\Rapport\bin\x64\"*.sys
+SHUTDOWN -r -f -t 7

